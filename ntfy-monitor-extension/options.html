@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="options.css">
+    <title>Ntfy Monitor Options</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ntfy Monitor Options</h1>
+        <form id="options-form">
+            <label for="ntfy-url">Ntfy Base URL:</label>
+            <input type="url" id="ntfy-url" value="https://ntfy.sh/" required>
+
+            <label for="topics">Topics (comma-separated):</label>
+            <input type="text" id="topics" placeholder="topic1,topic2" required>
+
+            <button type="submit">Save Options</button>
+        </form>
+        <div id="status"></div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

@@ -40,7 +40,7 @@ function updateBadge() {
     chrome.action.setBadgeText({ text: unreadCount > 0 ? String(unreadCount) : '' });
 }
 
-// Fetch notifications every minute
+// Fetch notifications every 30 minute
 setInterval(fetchNotifications, 1800000);
 fetchNotifications(); // Initial fetch on startup
 
