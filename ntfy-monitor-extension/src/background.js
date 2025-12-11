@@ -1,4 +1,4 @@
-const ntfyChannels = ['channel1', 'channel2']; // Replace with user-specified channels
+const ntfyChannels = ['strangejamaican']; // Replace with user-specified channels
 let unreadCount = 0;
 let notifications = [];
 
