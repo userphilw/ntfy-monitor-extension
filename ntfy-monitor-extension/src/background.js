@@ -41,7 +41,7 @@ function updateBadge() {
 }
 
 // Fetch notifications every minute
-setInterval(fetchNotifications, 60000);
+setInterval(fetchNotifications, 1800000);
 fetchNotifications(); // Initial fetch on startup
 
 // Listen for the extension button click to reset unread count
