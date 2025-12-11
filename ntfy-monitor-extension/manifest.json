@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Ntfy Monitor",
+  "version": "1.0",
+  "description": "Monitors a user-specified ntfy.sh channel and displays notifications.",
+  "permissions": [
+    "notifications",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "src/icons/icon16.png",
+      "48": "src/icons/icon48.png",
+      "128": "src/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "src/icons/icon16.png",
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
